@@ -11,7 +11,8 @@
   "dependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "dotenv": "^16.4.5",
-    "ethers": "^6.13.4"
+    "ethers": "^6.13.4",
+    "forge-std": "^1.1.2"
   },
   "devDependencies": {
     "hardhat": "^2.22.13"
