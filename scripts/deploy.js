@@ -3,7 +3,10 @@ const ethers = require("ethers");
 require("dotenv").config();
 
 async function main() {
-  const Contract = await hre.ethers.getContractFactory("Contract");
+  const Contract = await hre.ethers.getContractFactory(
+    "contracts/Contract.sol:Contract"
+  );
+
   const contract = await Contract.deploy();
 
   console.log(`Contract was deployed to: `, contract.target);
